@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+dist/
+coverage/
+storybook-static/
+typings/**/*.css.d.ts
+typings/**/*.scss.d.ts
