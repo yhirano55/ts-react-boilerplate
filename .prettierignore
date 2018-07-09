@@ -1,0 +1,6 @@
+package.json
+.DS_Store
+*.html
+*.css
+*.scss
+*.snap

@@ -7,6 +7,8 @@
     "start:dev": "webpack-serve --host 0.0.0.0",
     "build": "NODE_ENV=production webpack",
     "build:dev": "webpack --watch --progress",
+    "lint": "tslint src/**/*.ts src/**/*.tsx --format stylish",
+    "fmt": "prettier --config .prettierrc --write src/** && tslint src/**/*.ts src/**/*.tsx --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
