@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tcm": "tcm ./src -c -o ./typings",
+    "prestart:dev": "npm run tcm",
     "start:dev": "webpack-serve --host 0.0.0.0",
+    "prebuild": "npm run tcm",
     "build": "NODE_ENV=production webpack",
+    "prebuild:dev": "npm run tcm",
     "build:dev": "webpack --watch --progress",
     "lint": "tslint src/**/*.ts src/**/*.tsx --format stylish",
     "fmt": "prettier --config .prettierrc --write src/** && tslint src/**/*.ts src/**/*.tsx --fix",
