@@ -9,7 +9,8 @@
     "build:dev": "webpack --watch --progress",
     "lint": "tslint src/**/*.ts src/**/*.tsx --format stylish",
     "fmt": "prettier --config .prettierrc --write src/** && tslint src/**/*.ts src/**/*.tsx --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "keywords": [],
   "author": "",
