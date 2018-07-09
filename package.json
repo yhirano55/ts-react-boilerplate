@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start:dev": "webpack-serve --host 0.0.0.0",
+    "build": "NODE_ENV=production webpack",
+    "build:dev": "webpack --watch --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
