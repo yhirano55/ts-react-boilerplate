@@ -1,0 +1,16 @@
+version: '3'
+services:
+  app:
+    image: ts-react-boilerplate
+    build: .
+    command: /bin/sh -c 'while true; do sleep 60; done'
+    volumes:
+      - .:/src/app
+      - /src/app/node_modules
+    ports:
+      - '3000:3000'
+      - '6006:6006'
+      - '8080:8080'
+      - '8081:8081'
+    tty: true
+    stdin_open: true
