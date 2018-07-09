@@ -10,7 +10,9 @@
     "lint": "tslint src/**/*.ts src/**/*.tsx --format stylish",
     "fmt": "prettier --config .prettierrc --write src/** && tslint src/**/*.ts src/**/*.tsx --fix",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "pretest:feature": "npm run build",
+    "test:feature": "jest --config=jest.config.feature.js"
   },
   "keywords": [],
   "author": "",
