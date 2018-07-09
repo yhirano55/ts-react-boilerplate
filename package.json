@@ -17,7 +17,7 @@
     "test:watch": "jest --watchAll",
     "pretest:feature": "npm run build",
     "test:feature": "jest --config=jest.config.feature.js",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -h 0.0.0.0 -p 6006",
     "build-storybook": "build-storybook"
   },
   "keywords": [],

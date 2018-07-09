@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": "src",
-    "rootDirs": ["src", "typings"],
+    "rootDirs": ["src", "stories", "typings"],
     "outDir": "dist",
     "sourceMap": true,
     "module": "commonjs",
